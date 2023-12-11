@@ -1,0 +1,25 @@
+#!/bin/bash
+
+if [[ $# -eq 0 ]]; then
+    echo "Usage: checksub.sh specfile"
+    exit 1
+fi
+
+if [[ ! -e $1 ]]; then
+    echo "my_specfile is missing or could not be read"
+    exit 2
+fi
+
+file=$1
+
+mapfile -t specfile < "$file"
+
+for elem in "${specfile[@]}"; do
+    if ! [[ $elem == \#* ]]; then
+        if ! [[ -e $elem ]]; then
+            echo "$elem" >> file1
+        fi
+    fi
+done
+
+cat file1

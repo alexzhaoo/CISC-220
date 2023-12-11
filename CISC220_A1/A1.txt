@@ -1,0 +1,65 @@
+0.
+pwd
+
+1.
+
+cd /Users/alex/Desktop/CISC220_A1/marking/A1/"Justin Case"/answers.txt
+
+2.
+
+cd marking/A1/"Justin Case"/answers.txt
+3.
+
+cd ../../../../assignments/A6
+
+4.
+
+head -n 20 A1/Jack_Hammer/a1answer
+
+
+5.
+
+ls -d */*.txt
+
+6.
+
+ls -d */[^A]* 
+
+7.
+
+diff a1answer ../Sue_Vlaki/a1answer
+
+8.
+ls -lS
+
+9.
+ls -AR
+
+10.
+
+ls -d -1 */.*late++ */.*late+
+11.
+
+chmod 640 *.pdf
+
+12.
+chmod 664 *.png
+
+13.
+find . -type d -iname 'a*'
+
+14.
+
+cat /Users/alex/Desktop/CISC220_A1/classlist/CISC124 /Users/alex/Desktop/CISC220_A1/classlist/CISC220 | sort | uniq -d | tee students_124_and_220
+
+15.
+curl -o old_exams.zip https://research.cs.queensu.ca/home/burtonma/2023F/CISC220/A1/old_exams.zip
+
+mv old_exams.zip tests/exam/
+
+cd tests/exam
+
+unzip old_exams.zip
+
+rm old_exams.zip
+

@@ -1,0 +1,13 @@
+q1.sh
+q2.sh
+q4.sh
+A1.py
+q1.py
+q1.py
+# q3.sh
+q1.py
+# q3.sh
+q1.py
+# q3.sh
+
+q1.py
